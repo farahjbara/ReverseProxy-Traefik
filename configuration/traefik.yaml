@@ -1,0 +1,22 @@
+#api & Dashboard
+
+api: 
+  
+  dashboard: true
+  insecure: true
+# Docker configuration 
+providers: 
+  docker: 
+    watch: true 
+    exposedByDefault: false
+    swarmMode: true 
+# Logging 
+
+log: 
+  level: DEBUG
+#EntryPoints
+entryPoints:
+  web:
+    address: ":80"
+  websecure:
+    address: ":443" 
